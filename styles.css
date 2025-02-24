@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.month {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 40px);
+    box-sizing: border-box;
+}
+
+.month table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.month th, .month td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+.month th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.month-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .month {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .month {
+        width: calc(100% - 40px);
+    }
+}
